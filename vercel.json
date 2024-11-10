@@ -1,0 +1,40 @@
+{
+    "version": 2,
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.1"
+        }
+    },
+    "routes": [
+        {
+            "src": "/img/(.*)",
+            "dest": "public/img/"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_KEY": "base64:MMNHKV/DVIKPpnOuQ3OceiE4H9+smTxl4yAr1YNa3V0=",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://example-atomik.vercel.app/",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "tg70y.h.filess.io",
+        "DB_PORT": "3307",
+        "DB_DATABASE": "portofolio_bringslow",
+        "DB_USERNAME": "portofolio_bringslow",
+        "DB_PASSWORD": "d95f6cd57bd8fab82180f25f8c256564ad009974"
+    },
+    "outputDirectory": "public"
+}
